@@ -1,0 +1,27 @@
+{
+  "_comment": "示例：某领域的状态中枢片段。真实工作区里，这是全局状态文件中的一个 domain 节点。",
+  "domain": "calculus",
+  "current_phase": "第二阶段：极限与连续",
+  "phase_goal": "把「极限存在性判断」从背结论变成看图直觉",
+  "last_sync": "2026-01-01",
+  "matrix": {
+    "_comment": "三态：MASTERED 已掌握 / WEAK 薄弱 / PENDING 未开始。比百分比更好用——直接告诉 Agent 该往哪使劲。",
+    "极限的定义与性质": "MASTERED",
+    "极限存在性判断": "WEAK",
+    "连续性与间断点分类": "PENDING",
+    "导数定义与可导性": "PENDING"
+  },
+  "active_items": [
+    {
+      "id": "calc_item_01",
+      "title": "极限存在性判断：左右极限不等的情形",
+      "status": "IN_PROGRESS",
+      "notes": "分段函数在分段点处容易漏判左右极限；已建题型模板 01"
+    }
+  ],
+  "paths": {
+    "plan": "01_计划/全景方案.md",
+    "weak_point_card": "02_核心考点/考点01_极限与连续.md",
+    "template": "03_题型模板/模板01_极限计算流水线.md"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_comment": "状态中枢模板：把「现在在哪」从对话历史里剥离出来。字段可增删，但请保持单一事实源。",
+  "meta": {
+    "project": "<你的项目名>",
+    "current_phase": "<当前阶段，如：第 3 周 / 第二阶段>",
+    "phase_note": "<这个阶段的目标，一句话>",
+    "last_sync": "2026-01-01",
+    "_privacy": "不写姓名、机构、账号、联系方式等任何可定位信息"
+  },
+  "active_items": [
+    {
+      "id": "item_01",
+      "title": "<正在推进的事>",
+      "status": "IN_PROGRESS",
+      "deadline": "2026-01-15",
+      "notes": "<卡在哪、下一步是什么>"
+    },
+    {
+      "id": "item_02",
+      "title": "<另一件并行的事>",
+      "status": "PENDING",
+      "deadline": "2026-01-20",
+      "notes": "<还没开始，前置条件是什么>"
+    }
+  ],
+  "matrix": {
+    "_comment": "三态：MASTERED 已掌握 / WEAK 薄弱 / PENDING 未开始。比百分比更好用——它直接告诉 Agent 该往哪使劲。",
+    "<模块A>": "MASTERED",
+    "<模块B>": "WEAK",
+    "<模块C>": "PENDING"
+  },
+  "paths": {
+    "_comment": "指向工作区内其他关键文件的相对路径。校验器会检查这些路径是否存在。",
+    "router": "ROUTER.md",
+    "protocol": "00_协作协议.md",
+    "agents": "AGENTS.md",
+    "failure_ledger": "02_运行规则/避坑账本.md"
+  }
+}

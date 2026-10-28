@@ -1,0 +1,7 @@
+{
+  "_comment": "领域映射表示例。复制到工作区根目录并改名为 subjects.json 即可生效。键=领域目录名，值=用于自动归类的关键词列表。",
+  "_usage": "python tools/convert_to_markdown.py 某文件.docx",
+  "高等数学": ["高等数学", "高数", "微积分", "calculus"],
+  "大学物理": ["大学物理", "大物", "物理"],
+  "英语": ["英语", "词汇", "english"]
+}

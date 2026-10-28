@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时文件
+*.tmp
+*.bak
+*.bak_*
+*.bak-*
+_tmp_*
+~$*
+
+# 本机私有配置（各人自己的体检配置不要提交）
+.verifyrc.local.json
